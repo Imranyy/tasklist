@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import {View, Text ,StyleSheet, Button} from "react-native"
-import Header from '../components/Header';
 
 function Home({navigation}) {
   const pressHandler=()=>{
@@ -8,7 +7,6 @@ function Home({navigation}) {
   }
     return (
         <View style={styles.container}>
-            <Header/>
             <Button title='Go to About page' onPress={pressHandler}/>
         </View>
     );

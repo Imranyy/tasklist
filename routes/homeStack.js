@@ -5,10 +5,16 @@ import About from "../screens/About";
 
 const screens={
     Home:{
-        screen: Home
+        screen: Home,
+        navigationOptions:{
+            title:'My Todo'
+        }
     },
     About:{
-        screen:About
+        screen:About,
+        navigationOptions:{
+            title:"About Us"
+        }
     }
 }
 const HomeStack=createStackNavigator(screens);
