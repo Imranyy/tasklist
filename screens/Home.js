@@ -1,12 +1,15 @@
 import React, {useState} from 'react';
-import {View, Text ,StyleSheet} from "react-native"
+import {View, Text ,StyleSheet, Button} from "react-native"
 import Header from '../components/Header';
 
-function Home(props) {
+function Home({navigation}) {
+  const pressHandler=()=>{
+    navigation.navigate('About')
+  }
     return (
         <View style={styles.container}>
             <Header/>
-            <Text>Home page</Text>
+            <Button title='Go to About page' onPress={pressHandler}/>
         </View>
     );
 }
